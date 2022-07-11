@@ -17,18 +17,20 @@ $(document).ready(function(){
         let i = 0;
 
         $('.arrow-next').on('click', function(){
-            i--;
-            $('.slide__track').css('left',slideWidth*i)
-            if(Math.abs(i)==$('.slider__item').length-1){
+            if(Math.abs(i)==$('.slider__item').length-2){
                 i=1;
             }
+            i--;
+            $('.slide__track').css('left',slideWidth*i)
+            
         })
         $('.arrow-prev').on('click', function(){
-            i++;
-            $('.slide__track').css('left',slideWidth*i);
             if(i == 1){
                 i = - $('.slider__item').length+1;
             }
+            i++;
+            $('.slide__track').css('left',slideWidth*i);
+            
         })
     }
 

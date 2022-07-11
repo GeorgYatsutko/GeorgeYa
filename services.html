@@ -91,12 +91,21 @@
             </div>
             <div class="row">
                 <form id="form" action="sendmail.php" method="POST">
-                    <input placeholder="Your name" type="text" name="client_name" required>
-                    <input placeholder="Your tellephone" type="tell" name="tell" required>
-                    <input placeholder="Your email" type="email" name="tell" required>
+                    <input
+                      placeholder="Your name"
+                      type="text"
+                      name="client_name"
+                      required
+                    />
+                    <input
+                      placeholder="Your tellephone"
+                      type="tell"
+                      name="tell"
+                      required
+                    />
                     <textarea placeholder="Your message" name="massage"></textarea>
-                    <button class="button" type="submit">CONTACT ME</button>
-                </form>
+                    <a class="button" href="sendemail.html">CONTACT ME</a>
+                  </form>
             </div>
         </div>
         
@@ -114,13 +123,14 @@
                 Follow
             </h2>
             <nav>
-                <a href="#">Instagram</a>
-                <a href="#">Telegram</a>
-                <a href="#">Twitter</a>
-                <a href="#">Facebook</a>
+                <a href="callto:+380991286619">+380 99 128 66 19</a>
+                <a href="https://t.me/georg_excogitatoris" target="_blank">Telegram</a>
+                <a href="https://www.instagram.com/georg_excogitatoris/" target="_blank">Instagram</a>
+                <a href="https://twitter.com/George__Ya" target="_blank">Twitter</a>
+                <a href="https://www.facebook.com/profile.php?id=100022011998119" target="_blank">Facebook</a>
             </nav>
         </div>
-    </footer>
+    </footer>  
     
     <script src="scripts/jquery.js"></script>
     <script src="scripts/app.js?v=<?= time(); ?>"></script>

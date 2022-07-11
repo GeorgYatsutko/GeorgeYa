@@ -1,5 +1,9 @@
 @import url(null.css);
 @import url(bootstrap-grid.min.scss);
+html {
+  scroll-behavior: smooth;
+}
+
 .button {
   padding: 20px 40px;
   background-color: #00B4FF;
@@ -436,16 +440,27 @@ header a:hover {
   margin: 10px;
 }
 
+.section-portfolio .slider__item .notation {
+  padding: 15px 0;
+}
+
 .section-portfolio .slider__item img {
-  width: 350px;
+  height: 230px;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
-.section-portfolio .slider__item h3 {
+.section-portfolio .slider__item a {
   margin: 15px 15px;
   font-weight: 700;
   font-size: 16px;
+  color: #000;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.section-portfolio .slider__item a:hover {
+  color: #00B4FF;
 }
 
 .navigation {
@@ -781,5 +796,23 @@ footer .nav a:hover {
 
 .skills .skill li {
   margin-left: 10px;
+}
+
+.nowork {
+  padding: 100px 0;
+}
+
+.nowork .row {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.nowork .row h2 {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 20px;
+  margin: 30px 0;
 }
 /*# sourceMappingURL=style.css.map */

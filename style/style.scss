@@ -1,6 +1,9 @@
 @import url(null.css);
 @import url(bootstrap-grid.min.scss);
 $font: Ubuntu, sans-sarifx;
+html{
+	scroll-behavior: smooth;
+}
 .button{
 	padding: 20px 40px;
 	background-color: #00B4FF;
@@ -339,14 +342,24 @@ header{
 	.slider__item{
 		background: #fff;
 		margin: 10px;
+		// height: 236px;
+		// overflow: hidden;
+		.notation{
+			padding: 15px 0;
+		}
 		img{
-			width: 350px;
+			height: 230px;
 			object-fit: contain;
 		}
-		h3{
+		a{
 			margin: 15px 15px;
 			font-weight: 700;
 			font-size: 16px;
+			color: #000;
+			transition: all 0.3s;
+			&:hover{
+				color:#00B4FF;
+			}
 		}
 	}
 	
@@ -613,4 +626,17 @@ footer{
 				margin-left: 10px;
 			}
 		}
+}
+//sedemail
+.nowork{
+	padding: 100px 0;
+	.row{
+		flex-direction: column;
+		h2{
+			font-weight: 400;
+				font-size: 32px;
+				line-height: 20px;
+				margin: 30px 0;
+		}
+	}
 }
