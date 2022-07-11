@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>George.Ya</title>
+    <link rel="stylesheet" href="style/bootstrap-grid.min.css">
+
+    <link rel="stylesheet" href="style/style.css?v=<?= time(); ?>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="burger-wrapper">
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+    <div class="logo">George.Ya </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+    </nav>
+</header>
+<div class="menu">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+</div>
+    <section class="service__slaider">
+        <div class="container">
+            <div class="slaider-s">
+            <div class="slaider-track">
+                <div class="slaid"><img class="slider__img" src="img/screen.png" alt=""></div>
+                <div class="slaid"><img class="slider__img" src="img/screen.png" alt=""></div>
+                <div class="slaid"><img class="slider__img" src="img/screen.png" alt=""></div>
+            </div>
+        </div>
+        <div class="navigation">
+            <div class="arrow arrow-prev">←</div>
+            <div class="arrow-next">
+                <div class="arrow ">→</div>  
+                    <span></span> 
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section class="section-skills">
+        <div class="container">
+            <div class="row">
+                <div class="section__title">
+                        <p>Work</p>
+                        <h2>What i can?</h2>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="skill">
+                    <h2>Skills</h2>
+                    <p>HTML (HTML5)/ CSS (CSS3)/ jQuery/ SASS/  Flexbox/ BEM/ React</p>
+                </div>
+                <div class="skill">
+                    <h2>Tolls</h2>
+                    <p>Figma/ Fotoshop/ VS Code</p>
+                </div>
+                <div class="skill">
+                    <h2>Occupation</h2>
+                    <ul>
+                        <li>Layout cross-browser, valid, adaptive. Only clean and understandable code.</li>
+                        <li>I make up from PSD, Figma.</li>
+                        <li>Adaptability, responsiveness (responsive), rubber
+                        CSS3\JS site animation.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section4">
+        <div class="container">
+            <div class="row">
+                <div class="section__title">
+                    <p>Communication</p>
+                    <h2>Let’s talk</h2>
+                </div>
+            </div>
+            <div class="row">
+                <form id="form" action="sendmail.php" method="POST">
+                    <input placeholder="Your name" type="text" name="client_name" required>
+                    <input placeholder="Your tellephone" type="tell" name="tell" required>
+                    <input placeholder="Your email" type="email" name="tell" required>
+                    <textarea placeholder="Your message" name="massage"></textarea>
+                    <button class="button" type="submit">CONTACT ME</button>
+                </form>
+            </div>
+        </div>
+        
+        </div>
+    </section>
+    <footer>
+        <div class="logo">
+            <span>George.Ya</span>
+            <span class="subtitle">
+                AllRight Reserved - 2020
+            </span >
+        </div>
+        <div class="nav">
+            <h2>
+                Follow
+            </h2>
+            <nav>
+                <a href="#">Instagram</a>
+                <a href="#">Telegram</a>
+                <a href="#">Twitter</a>
+                <a href="#">Facebook</a>
+            </nav>
+        </div>
+    </footer>
+    
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/app.js?v=<?= time(); ?>"></script>
+</body>
+</html>
