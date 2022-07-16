@@ -10,9 +10,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/animate.css">
 </head>
 <body>
-<header>
+<div class="wrap">
+
+
+<header class="wow fadeInDown">
     <div class="burger-wrapper">
         <div class="burger">
             <div class="line"></div>
@@ -33,9 +37,9 @@
     <a href="about.html">About</a>
 </div>
     <section class="section1">
-        <div class="section1__decor"></div>
+        <div class="section1__decor wow fadeInRight"></div>
         <div class="main">
-            <div class="main__socials">
+            <div class="main__socials wow fadeInLeft">
                 <a href="https://twitter.com/George__Ya" target="_blank">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path id="twitter" fill-rule="evenodd" clip-rule="evenodd" d="M23 2.99999C22.0424 3.67547 20.9821 4.1921 19.86 4.52999C18.6264 3.11153 16.6384 2.61411 14.8821 3.28445C13.1258 3.95479 11.9748 5.65029 12 7.52999V8.52999C8.43066 8.62255 5.05203 6.92196 3 3.99999C3 3.99999 -1 13 8 17C5.94053 18.398 3.48716 19.0989 1 19C10 24 21 19 21 7.49999C20.9991 7.22145 20.9723 6.94359 20.92 6.66999C21.9406 5.66349 22.6608 4.39271 23 2.99999Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -53,7 +57,7 @@
                     </svg>
                 </a>
             </div>
-            <div class="main__content col-lg-4">
+            <div class="main__content col-lg-4 wow fadeIn">
                 <h3>George Yatsutko</h3>
                 <h1>Front End <br/>Developer</h1>
                 <div class="main__text">
@@ -64,7 +68,7 @@
                 <a href="about.html" class="main__button button">Hire Me</a>
                 <a href="#form" class="main__link">Contact Me</a>
             </div>
-            <div class="main__img col-xl-5 col-lg-7 col-md-6">
+            <div class="main__img col-xl-5 col-lg-7 col-md-6 wow fadeInRight">
                 <img src="img/platforms.svg" class="" alt="">
             </div>
         </div>
@@ -73,10 +77,10 @@
         <div class="section2__decor"></div>
         <div class="container">
             <div class="row justify-content-around align-items-center">
-                <div class="section2__img col-lg-5">
+                <div class="section2__img col-lg-5 wow slideInLeft">
                     <img src="img/potret.svg"  alt="">
                 </div>
-                <div class="section2__text col-lg-4">
+                <div class="section2__text col-lg-4 wow slideInRight">
                     <h2>Front End</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida  mollis sed. elit. Gravida pellentesque in eu, luctus mollis sed, ipsum dolor sit amet
 
@@ -94,16 +98,16 @@
         </div>
     </section>
     <section class="section-portfolio">
-        <div class="section-portfolio__decor"></div>
+        <div class="section-portfolio__decor wow fadeInRight"></div>
         <div class="container">
             <div class="row">
-                    <div class="section__title">
+                    <div class="section__title wow fadeIn">
                         <p>Project's</p>
                         <h2>My Works</h2>
                     </div>
             </div>
         </div>
-            <div class="slider">
+            <div class="slider wow fadeInRight">
                 <div class="slide__track">
                    <div class="slider__item">
                         <img src="img/Architect.png" alt="">
@@ -147,13 +151,13 @@
         
         <div class="container">
             <div class="row">
-                <div class="section__title">
+                <div class="section__title wow fadeInLeft">
                     <p>Communication</p>
                     <h2>Let’s talk</h2>
                 </div>
             </div>
             <div class="row">
-                <form id="form" action="sendmail.php" method="POST">
+                <form id="form" action="sendmail.php" method="POST" class="wow fadeIn">
                     <input
                       placeholder="Your name"
                       type="text"
@@ -171,17 +175,17 @@
                   </form>
             </div>
         </div>
-        <div class="section4__decor">
+        <div class="section4__decor wow fadeInLeft">
         </div>
     </section>
     <section class="section-reviews">
         <div class="section__title">
-            <p>Communication</p>
-            <h2>Let’s talk</h2>
+            <p>Happy</p>
+            <h2>What they say?</h2>
         </div>
         <div class="container">
             <div class="section-reviews__row">
-                <div class="review">
+                <div class="review wow fadeInLeft">
                     <div class="avatar">
                     <img src="img/avatar1.png" alt=""> 
                     </div>
@@ -194,7 +198,7 @@
                     </div>
                     
                 </div>
-                <div class="review">
+                <div class="review wow fadeInRight">
                     <div class="avatar">
                     <img src="img/аватарка2.png" alt=""> 
                     </div>
@@ -229,10 +233,13 @@
                 <a href="https://www.facebook.com/profile.php?id=100022011998119" target="_blank">Facebook</a>
             </nav>
         </div>
-    </footer>   
-
-
+    </footer>  
+</div> 
+<script src="scripts/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
 <script src="scripts/jquery.js"></script>
-<script src="scripts/app.js?v=<?= time(); ?>"></script>
+<script src="scripts/app.js"></script>
 </body>
 </html>

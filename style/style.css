@@ -4,6 +4,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.wrap {
+  overflow: hidden;
+}
+
 .button {
   padding: 20px 40px;
   background-color: #00B4FF;
@@ -162,9 +166,9 @@ header a:hover {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .section1 .main .main__socials a {
@@ -721,9 +725,17 @@ footer .nav a:hover {
   transition: all 0.3s;
 }
 
-.service__slaider .slaid img {
-  -o-object-fit: contain;
-     object-fit: contain;
+@media (min-width: 1200px) {
+  .service__slaider .slaider-track {
+    max-height: 600px;
+  }
+}
+
+.service__slaider .slaid {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .service__slaider .navigation {
@@ -755,6 +767,10 @@ footer .nav a:hover {
   top: 12px;
   left: 20px;
   z-index: 1;
+}
+
+.section-skills {
+  margin: 0 0 100px;
 }
 
 .section-skills .section__title {

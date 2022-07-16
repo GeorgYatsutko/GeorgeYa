@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>George.Ya</title>
-    <link rel="stylesheet" href="style/bootstrap-grid.min.css">
-
-    <link rel="stylesheet" href="style/style.css?v=<?= time(); ?>">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>George.Ya</title>
+        <link rel="stylesheet" href="style/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style/animate.css">
+    </head>
 <body>
-<header>
+    <div class="wrap">
+
+
+<header class="wow fadeInDown">
     <div class="burger-wrapper">
         <div class="burger">
             <div class="line"></div>
@@ -33,13 +36,14 @@
     <a href="services.html">Services</a>
     <a href="about.html">About</a>
 </div>
-    <section class="service__slaider">
+    <section class="service__slaider wow fadeInRight">
         <div class="container">
-            <div class="slaider-s">
+            <div class="slaider-s ">
             <div class="slaider-track">
-                <div class="slaid"><img class="slider__img" src="img/screen.png" alt=""></div>
-                <div class="slaid"><img class="slider__img" src="img/screen.png" alt=""></div>
-                <div class="slaid"><img class="slider__img" src="img/screen.png" alt=""></div>
+                <div class="slaid"><img class="slider__img" src="img/Astra.png" alt=""></div>
+                <div class="slaid"><img class="slider__img" src="img/Freebie_desktop.png" alt=""></div>
+                <div class="slaid"><img class="slider__img" src="img/Portfolio - Landing Page.png" alt=""></div>
+                <div class="slaid"><img class="slider__img" src="img/Architect.png" alt=""></div>
             </div>
         </div>
         <div class="navigation">
@@ -52,7 +56,7 @@
         </div>
         
     </section>
-    <section class="section-skills">
+    <section class="section-skills wow fadeInUp">
         <div class="container">
             <div class="row">
                 <div class="section__title">
@@ -82,15 +86,16 @@
         </div>
     </section>
     <section class="section4">
+        
         <div class="container">
             <div class="row">
-                <div class="section__title">
+                <div class="section__title wow fadeInLeft">
                     <p>Communication</p>
                     <h2>Let’s talk</h2>
                 </div>
             </div>
             <div class="row">
-                <form id="form" action="sendmail.php" method="POST">
+                <form id="form" action="sendmail.php" method="POST" class="wow fadeIn">
                     <input
                       placeholder="Your name"
                       type="text"
@@ -108,7 +113,7 @@
                   </form>
             </div>
         </div>
-        
+        <div class="section4__decor wow fadeInLeft">
         </div>
     </section>
     <footer>
@@ -131,8 +136,12 @@
             </nav>
         </div>
     </footer>  
-    
+</div>
+    <script src="scripts/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <script src="scripts/jquery.js"></script>
-    <script src="scripts/app.js?v=<?= time(); ?>"></script>
+    <script src="scripts/app.js"></script>
 </body>
 </html>

@@ -4,6 +4,9 @@ $font: Ubuntu, sans-sarifx;
 html{
 	scroll-behavior: smooth;
 }
+.wrap{
+	overflow: hidden;
+}
 .button{
 	padding: 20px 40px;
 	background-color: #00B4FF;
@@ -126,7 +129,7 @@ header{
 	.main{
 		display: flex;
 		justify-content: space-around;
-		align-items: flex-start;
+		align-items: center;
 		.main__socials{
 			a{
 				display: inline-block;
@@ -562,10 +565,16 @@ footer{
 		position: relative;
 		left: 0;
 		transition: all 0.3s;
+		@media(min-width:1200px){
+			 max-height: 600px;
+		}
+		
 	}
 	.slaid {
+		object-fit: cover;
+			object-position: center;
 		img{
-			object-fit: contain;
+			
 		}
 	}
 	.navigation {
@@ -599,6 +608,7 @@ footer{
 
 }	
 .section-skills{
+	margin: 0 0 100px;
 	.section__title{
 		margin: 0;
 	}
