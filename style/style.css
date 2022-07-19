@@ -586,7 +586,7 @@ header a:hover {
 }
 
 .section-reviews .review {
-  max-width: 570px;
+  width: 500px;
   background: #F5F5F5;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -707,7 +707,7 @@ footer .nav a:hover {
 }
 
 .service__slaider {
-  padding: 100px 0 200px;
+  padding: 100px 0 100px;
 }
 
 .service__slaider .slaider-s {
